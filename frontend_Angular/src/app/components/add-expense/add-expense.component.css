@@ -1,0 +1,164 @@
+
+
+.login__area {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  padding: 10px;
+}
+
+.login__wrapper {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login__intro {
+  margin-bottom: 40px;
+}
+
+.login__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.login__intro p {
+  font-size: 14px;
+  color: #777777;
+}
+
+.login__input {
+  margin-bottom: 25px;
+}
+
+.login__input input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  font-size: 14px;
+  color: #333333;
+}
+
+.login__input input::placeholder {
+  color: #999999;
+}
+
+.login__option {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login__remember {
+  display: flex;
+  align-items: center;
+}
+
+.login__remember input {
+  margin-right: 5px;
+}
+
+.login__forgot a {
+  font-size: 14px;
+  color: #2c651e;
+  text-decoration: none;
+}
+
+.login__forgot a:hover {
+  text-decoration: underline;
+}
+
+.login__submit {
+  margin-bottom: 25px;
+}
+
+.login__submit button {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #333333, #30b479);
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login__submit button:hover {
+  background: linear-gradient(45deg, #176241, #095632);
+}
+
+.login__divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.divider__line {
+  height: 1px;
+  background: #dddddd;
+  flex-grow: 1;
+}
+
+.or {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #777777;
+}
+
+.login__gamil {
+  margin-bottom: 30px;
+}
+
+.login__gamil-btn {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  color: #333333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login__gamil-btn svg {
+  margin-right: 10px;
+}
+
+.login__gamil-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.log__not-account {
+  text-align: center;
+}
+
+.log__not-account p {
+  font-size: 14px;
+  color: #777777;
+}
+
+.log__not-account a {
+  color: #2c651e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.log__not-account a:hover {
+  text-decoration: underline;
+}

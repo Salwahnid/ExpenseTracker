@@ -1,0 +1,54 @@
+<main>
+  <section class="add-expense-area">
+    <div class="container">
+      <div class="expense-wrapper text-center mx-auto">
+        <div class="expense-intro mb-40">
+          <h3 class="expense-title">Add Expense</h3>
+        </div>
+        <form [formGroup]="expenseForm" (ngSubmit)="addExpense()">
+          <div class="form-group mb-3">
+            <label for="amount">Amount</label>
+            <input
+              id="Amount"
+              type="number"
+              class="form-control"
+              formControlName="Amount"
+              placeholder="Enter the amount"
+              required
+            />
+
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="Description">Description</label>
+            <input
+              id="Description"
+              type="text"
+              class="form-control"
+              formControlName="Description"
+              placeholder="Enter a description"
+              required
+            />
+
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="Category">Category</label>
+            <select id="Category" class="form-select" formControlName="Category" required>
+              <option value="" disabled selected>Choose a category</option>
+              <option value="Food">Food</option>
+              <option value="Transport">Transport</option>
+              <option value="Entertainment">Entertainment</option>
+              <option value="Other">Other</option>
+            </select>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100" [disabled]="expenseForm.invalid">
+            Add Expense
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

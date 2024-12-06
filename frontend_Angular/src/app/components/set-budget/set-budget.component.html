@@ -1,0 +1,48 @@
+<main>
+  <!-- Zone de gestion du budget start -->
+  <section class="budget__area section-space">
+    <div class="container">
+      <div class="budget__wrapper text-center mx-auto">
+        <div class="budget__intro mb-40">
+          <h3 class="budget__title">Manage Monthly Budget</h3>
+        </div>
+        <form [formGroup]="budgetForm" (ngSubmit)="onSubmit()">
+          <!-- Input du budget mensuel -->
+          <div class="budget__input mb-25">
+            <input
+              id="totalBudget"
+              type="number"
+              placeholder="Monthly budget"
+              formControlName="totalBudget"
+              class="form-control"
+              name="totalBudget"
+              required
+            />
+            <div *ngIf="budgetForm.get('totalBudget')?.invalid && budgetForm.get('totalBudget')?.touched" class="text-danger text-start" >
+              Please enter a valid budget.
+            </div>
+          </div>
+
+          <!-- Sélection du mois courant -->
+          <div class="budget__input mb-25">
+            <select id="currentMonth" formControlName="currentMonth" class="form-select" required>
+              <option value="" disabled selected>Choose the month</option>
+              <option *ngFor="let month of months" [value]="month.value">{{ month.label }}</option>
+            </select>
+            <div *ngIf="budgetForm.get('currentMonth')?.invalid && budgetForm.get('currentMonth')?.touched" class="text-danger text-start">
+              Please select a month.
+            </div>
+          </div>
+
+          <!-- Bouton soumettre -->
+          <div class="budget__submit mb-25">
+            <button class="bd-gradient-btn w-100" type="submit" [disabled]="budgetForm.invalid">
+              Save the Budget
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Zone de gestion du budget end -->
+</main>

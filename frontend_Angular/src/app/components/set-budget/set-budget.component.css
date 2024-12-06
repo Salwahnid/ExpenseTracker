@@ -1,0 +1,39 @@
+.budget__area {
+  background: #f9f9f9;
+  padding: 60px 0;
+}
+
+.budget__wrapper {
+  max-width: 600px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.budget__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.budget__input input,
+.budget__input select {
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.budget__submit button {
+  font-size: 18px;
+  padding: 12px 0;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  color: #fff;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.budget__submit button:hover {
+  background: linear-gradient(90deg, #388e3c, #4caf50);
+}

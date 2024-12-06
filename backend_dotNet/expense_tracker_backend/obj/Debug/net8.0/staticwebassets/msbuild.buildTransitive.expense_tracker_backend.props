@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\expense_tracker_backend.props" />
+</Project>
